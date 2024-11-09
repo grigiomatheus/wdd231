@@ -257,6 +257,16 @@ footer {
     right: 10px;
 }
 
+#courses-credit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--primary-font);
+    font-size: var(--secondary-font-size);
+    background-color: var(--color-primary);
+    color: var(--color-quinary);
+}
+
 @media screen and (max-width: 768px) {
     :root {
         --primary-font-size: 8vw;
