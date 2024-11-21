@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    /* border: 1px solid #000; */
+}
+
+:root {
+    --primary-color: #0056b3; /* Azul mais escuro para um tom sofisticado */
+    --secondary-color: #6c757d; /* Cinza já está bom, mantém a neutralidade */
+
+    --background-dark-color: #1e2438; /* Azul escuro mais neutro */
+    --background-dark-grey: #141821; /* Um tom mais escuro de cinza-azulado */
+    --font-dark-color: #2c2c2c; /* Preto menos intenso para texto */
+    --font-dark-color-2: #101010; /* Preto puro para contraste maior */
+
+    --background-light-color: #ffffff; /* Branco puro para maior contraste */
+    --background-light-color-2: rgba(0, 123, 255, 0.2); /* Transparência do primary */
+    --font-light-color: #a9b5d1; /* Azul acinzentado mais suave */
+}
+
+body {
+    min-height: 50vh;
+    background-color: var(--background-light-color);
+    color: var(--font-dark-color);
+}
+
+body.dark-theme {
+    background-color: var(--background-dark-color);
+    color: var(--font-light-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto auto;
+    padding: 1rem 2rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+header button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.logo {
+    padding-right: 20px;
+}
+
+#theme-toggle {
+    justify-self: end;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    list-style: none;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0px 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+.footer-icons {
+    max-width: 100px;
+    padding: 15px;
+}
+
+main {
+    height: 60vh;
+}
+
+#hamburguer {
+    display: none;
+}
+
+#hamburguer::before {
+    content: '\2630';
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#hamburguer.open::before {
+    content: 'X';
+}
+
+@media (max-width: 768px) {
+    #hamburguer {
+        display: block;
+    }
+
+    header nav {
+        display: grid;
+        grid-template-rows: 0fr;
+        grid-column: span 0;
+        width: 0;
+        order: 1;
+        transition: grid-template-rows 0.5s ease-out;
+    }
+
+    header nav ul {
+        overflow: hidden;
+    }
+
+    header nav.open {
+        grid-template-rows: 1fr;
+        grid-column: span 4;
+        padding-top: 20px;
+        width: auto;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header nav ul a {
+        padding-left: 0;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
