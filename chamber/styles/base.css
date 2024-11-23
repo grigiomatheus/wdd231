@@ -63,6 +63,10 @@ header nav ul {
     list-style: none;
 }
 
+header h1 {
+    font-size: 2rem;
+}
+
 header nav ul a {
     text-decoration: none;
     color: inherit;
@@ -101,6 +105,10 @@ footer {
 @media (max-width: 768px) {
     #hamburguer {
         display: block;
+    }
+
+    header h1 {
+        font-size: 5vw;
     }
 
     header nav {
