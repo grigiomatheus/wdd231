@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
-    /* border: 1px solid #000; */
 }
 
 :root {
@@ -78,10 +77,6 @@ footer {
 .footer-icons {
     max-width: 100px;
     padding: 15px;
-}
-
-main {
-    height: 60vh;
 }
 
 #hamburguer {

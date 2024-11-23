@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Fake Tech",
+        "address": "244 São João Street, Londrina, Paraná, Brazil",
+        "phone": "123-456-7891",
+        "website": "https://google.com",
+        "image": "https://picsum.photos/200/300?random=1",
+        "membershipLevel": 3,
+        "description": "Leading technology solutions provider."
+    },
+    {
+        "name": "Fake Eco Products",
+        "address": "244 São João Street, Londrina, Paraná, Brazil",
+        "phone": "123-456-7892",
+        "website": "https://google.com",
+        "image": "https://picsum.photos/200/300?random=2",
+        "membershipLevel": 2,
+        "description": "Eco-friendly products and services."
+    },
+    {
+        "name": "Fake Health Co.",
+        "address": "244 São João Street, Londrina, Paraná, Brazil",
+        "phone": "123-456-7893",
+        "website": "https://google.com",
+        "image": "https://picsum.photos/200/300?random=3",
+        "membershipLevel": 1,
+        "description": "Healthcare and wellness services."
+    },
+    {
+        "name": "Fake Education Company",
+        "address": "244 São João Street, Londrina, Paraná, Brazil",
+        "phone": "123-456-7894",
+        "website": "https://google.com",
+        "image": "https://picsum.photos/200/300?random=4",
+        "membershipLevel": 3,
+        "description": "Innovative educational tools and resources."
+    },
+    {
+        "name": "Fake Food Co.",
+        "address": "244 São João Street, Londrina, Paraná, Brazil",
+        "phone": "123-456-7895",
+        "website": "https://google.com",
+        "image": "https://picsum.photos/200/300?random=5",
+        "membershipLevel": 2,
+        "description": "Gourmet food and catering services."
+    },
+    {
+        "name": "Fake Fitness Company",
+        "address": "244 São João Street, Londrina, Paraná, Brazil",
+        "phone": "123-456-7896",
+        "website": "https://google.com",
+        "image": "https://picsum.photos/200/300?random=6",
+        "membershipLevel": 1,
+        "description": "Fitness and personal training services."
+    },
+    {
+        "name": "Fake Travel Agency",
+        "address": "244 São João Street, Londrina, Paraná, Brazil",
+        "phone": "123-456-7897",
+        "website": "https://google.com",
+        "image": "https://picsum.photos/200/300?random=7",
+        "membershipLevel": 3,
+        "description": "Travel planning and booking services."
+    }
+]
