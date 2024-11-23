@@ -38,6 +38,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--background-light-color-2);
+    font-family: var(--primary-font);
     padding-top: 20px;
 }
 
@@ -71,12 +72,15 @@
 
 .member-card h3, .member-item h3 {
     font-size: 1.2rem;
+    font-family: var(--primary-font);
     color: var(--primary-color);
     margin: 10px 0;
 }
 
 .member-card p, .member-item p {
     margin: 5px 0;
+    font-family: var(--secondary-font);
+    color: var(--font-dark-color);
 }
 
 .member-card a, .member-item a {

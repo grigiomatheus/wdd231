@@ -103,4 +103,6 @@ document.getElementById('toggle-list').addEventListener('click', async () => {
     displayList(members);
 });
 
+document.getElementById('last-modification').textContent = `Last modification: ${document.lastModified}`;
+
 document.getElementById('toggle-grid').click();

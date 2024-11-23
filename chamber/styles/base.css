@@ -6,21 +6,24 @@
 }
 
 :root {
-    --primary-color: #0056b3; /* Azul mais escuro para um tom sofisticado */
-    --secondary-color: #6c757d; /* Cinza já está bom, mantém a neutralidade */
+    --primary-color: #0056b3;
+    --secondary-color: #6c757d;
 
-    --background-dark-color: #1e2438; /* Azul escuro mais neutro */
-    --background-dark-grey: #141821; /* Um tom mais escuro de cinza-azulado */
-    --font-dark-color: #2c2c2c; /* Preto menos intenso para texto */
-    --font-dark-color-2: #101010; /* Preto puro para contraste maior */
+    --primary-font: 'Space Grotesk', sans-serif;
+    --secondary-font: 'Noto Serif', serif;
 
-    --background-light-color: #ffffff; /* Branco puro para maior contraste */
-    --background-light-color-2: rgba(0, 123, 255, 0.2); /* Transparência do primary */
-    --font-light-color: #a9b5d1; /* Azul acinzentado mais suave */
+    --background-dark-color: #1e2438;
+    --background-dark-grey: #141821;
+    --font-dark-color: #2c2c2c;
+    --font-dark-color-2: #101010;
+
+    --background-light-color: #ffffff;
+    --background-light-color-2: rgba(0, 123, 255, 0.2);
+    --font-light-color: #a9b5d1;
 }
 
 body {
-    min-height: 50vh;
+    min-height: 100vh;
     background-color: var(--background-light-color);
     color: var(--font-dark-color);
 }
@@ -34,7 +37,7 @@ header {
     display: grid;
     grid-template-columns: auto auto 1fr auto auto;
     padding: 1rem 2rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--primary-font);
     font-size: 1.5rem;
     align-items: center;
 }
@@ -72,6 +75,7 @@ footer {
     align-items: center;
     justify-items: center;
     padding: 20px;
+    font-family: var(--primary-font);
 }
 
 .footer-icons {
