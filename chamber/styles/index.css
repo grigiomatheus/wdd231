@@ -1,0 +1,227 @@
+h1,
+h2,
+h3 {
+  font-family: var(--primary-font);
+}
+
+p {
+  font-family: var(--secondary-font);
+}
+
+/* Main Figure */
+.hero-card-figure {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+  height: 60vh;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+}
+
+figcaption h2 {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+}
+
+figcaption p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.call-to-action-btn {
+  font-family: var(--primary-font);
+  margin-top: 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action-btn:hover {
+  background-color: #ff4500;
+  transform: scale(1.10);
+}
+
+/* Home Section */
+.home-section {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.home-section h2 {
+  padding-bottom: 1rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  gap: 1rem;
+}
+
+.home-card {
+  background-color: #ddd;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.home-card h3 {
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.home-card div {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.current-weather {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 0;
+  padding: 0;
+}
+
+.current-weather img {
+  max-width: 100px;
+}
+
+.current-weather div > p {
+  padding-bottom: 10px;
+}
+
+/* Business Section */
+.businesses {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.business-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.business-card:hover {
+  transform: translateY(-5px);
+}
+
+.business-card h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.business-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.business-image {
+  margin: 1rem 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.business-image img {
+  width: 100%;
+  max-height: 300px;
+  max-width: 400px;
+  display: block;
+  text-align: center;
+}
+
+.business-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.business-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-family: var(--secondary-font);
+}
+
+.business-card li a {
+  text-decoration: none;
+}
+
+.business-card li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+  .hero-card-figure {
+    height: 100vh;
+  }
+
+  .hero-image {
+    height: 100vh;
+  }
+
+  .call-to-action-btn {
+    font-size: 1rem; /* Reduz o tamanho da fonte */
+    padding: 1rem; /* Reduz o espaçamento interno */
+    border-radius: 8px; /* Bordas ligeiramente menores */
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    box-sizing: border-box; /* Garante que padding seja incluído no cálculo do tamanho */
+  }
+
+  .call-to-action-btn:hover {
+    transform: scale(1.05); /* Reduz o aumento ao passar o mouse */
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+  }  
+
+  .businesses {
+    display: block;
+    width: auto;
+  }
+
+  .business-card {
+    margin-bottom: 2rem;
+    justify-items: center;
+  }
+
+  .business-image {
+    display: block;
+    text-align: center;
+  }
+}

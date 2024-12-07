@@ -5,6 +5,7 @@
         "phone": "123-456-7891",
         "website": "https://google.com",
         "image": "https://picsum.photos/200/300?random=1",
+        "email": "fake@email.com",
         "membershipLevel": 3,
         "description": "Leading technology solutions provider."
     },
@@ -14,6 +15,7 @@
         "phone": "123-456-7892",
         "website": "https://google.com",
         "image": "https://picsum.photos/200/300?random=2",
+        "email": "fake@email.com",
         "membershipLevel": 2,
         "description": "Eco-friendly products and services."
     },
@@ -23,6 +25,7 @@
         "phone": "123-456-7893",
         "website": "https://google.com",
         "image": "https://picsum.photos/200/300?random=3",
+        "email": "fake@email.com",
         "membershipLevel": 1,
         "description": "Healthcare and wellness services."
     },
@@ -32,6 +35,7 @@
         "phone": "123-456-7894",
         "website": "https://google.com",
         "image": "https://picsum.photos/200/300?random=4",
+        "email": "fake@email.com",
         "membershipLevel": 3,
         "description": "Innovative educational tools and resources."
     },
@@ -41,6 +45,7 @@
         "phone": "123-456-7895",
         "website": "https://google.com",
         "image": "https://picsum.photos/200/300?random=5",
+        "email": "fake@email.com",
         "membershipLevel": 2,
         "description": "Gourmet food and catering services."
     },
@@ -50,6 +55,7 @@
         "phone": "123-456-7896",
         "website": "https://google.com",
         "image": "https://picsum.photos/200/300?random=6",
+        "email": "fake@email.com",
         "membershipLevel": 1,
         "description": "Fitness and personal training services."
     },
@@ -59,6 +65,7 @@
         "phone": "123-456-7897",
         "website": "https://google.com",
         "image": "https://picsum.photos/200/300?random=7",
+        "email": "fake@email.com",
         "membershipLevel": 3,
         "description": "Travel planning and booking services."
     }

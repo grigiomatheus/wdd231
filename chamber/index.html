@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 231 - Chamber Home Page</title>
+    <meta name="author" content="Matheus Grigio da Silva" />
+    <meta
+      name="description"
+      content="This page represents the home page of the local chamber of commerce."
+    />
+    <meta property="og:title" content="WDD 231 Chamber Directory Page" />
+    <meta
+      property="og:description"
+      content="This page represents the home page of the local chamber of commerce."
+    />
+    <meta
+      property="og:image"
+      content="https://grigiomatheus.github.io/wdd231/chamber/images/og-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://grigiomatheus.github.io/wdd231/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="images/favico.svg" type="image/x-icon" />
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.png" loading="lazy" alt="Logo" class="logo" />
+      <h1>Londrina Chamber</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle">
+        <img src="images/theme-toggle-icon.png" alt="Theme Toggle Icon" />
+      </button>
+      <button id="hamburguer"></button>
+    </header>
+    <main>
+      <figure class="hero-card-figure">
+        <img
+          src="images/londrina-city.webp"
+          alt="Londrina City"
+          class="hero-image"
+          loading="lazy"
+        />
+        <figcaption>
+          <h2>Welcome to the Londrina Chamber of Commerce</h2>
+          <p>
+            Discover the best businesses and organizations in Londrina, Paraná,
+            Brazil.
+          </p>
+          <button class="call-to-action-btn">Discover More</button>
+        </figcaption>
+      </figure>
+      <section class="home-section">
+        <h2>Home</h2>
+        <div class="home-grid">
+          <div class="home-card">
+            <h3>Events</h3>
+            <div>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, aperiam officia quae neque ut similique quisquam ipsum vel, amet at inventore recusandae placeat. Laudantium voluptas beatae iste tempore delectus animi ipsum, itaque nemo debitis dolor ad dolores aliquid corrupti quaerat repellendus rem necessitatibus corporis praesentium quibusdam magni excepturi impedit dolore. Repellat voluptatibus dolorum consectetur quasi temporibus ab dolores voluptate rem repellendus qui perferendis, placeat ut tenetur delectus maiores labore aspernatur excepturi hic! Expedita quasi hic laudantium voluptatibus a, cum fugit harum tenetur blanditiis, magnam non corrupti sequi quos modi, repudiandae aut possimus. Magnam quam voluptate minus eligendi sint provident quidem ipsam reiciendis molestias. Voluptatem deserunt maxime quae blanditiis eligendi tenetur earum quisquam eum quod, quas unde repellat sunt ratione distinctio optio temporibus quasi saepe labore sed illum magni. Enim earum quas asperiores maxime! Sequi ut nulla quasi nemo molestiae, suscipit natus dolore recusandae. Aliquam quas veritatis expedita ea nostrum dignissimos.
+            </div>
+          </div>
+          <div class="home-card">
+            <h3>Current Weather</h3>
+            <div class="current-weather"></div>
+          </div>
+          <div class="home-card">
+            <h3>Weather Forecast</h3>
+            <div class="weather-forecast"></div>
+          </div>
+        </div>
+      </section>
+      <section class="businesses">
+      </section>
+    </main>
+    <footer>
+      <div>
+        <strong>Londrina Chamber Commerce</strong>
+        <p>Address: 1234 Main Street</p>
+        <p>Londrina, Paraná, Brazil</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: LondrinaChamber@email.com</p>
+      </div>
+      <div class="media-icons">
+        <a href="https://youtube.com" target="_blank"
+          ><img
+            src="images/youtube-icon.svg"
+            alt="Youtube Icon"
+            class="footer-icons"
+        /></a>
+        <a href="https://twitter.com" target="_blank"
+          ><img
+            src="images/twitter-icon.svg"
+            alt="Twitter Icon"
+            class="footer-icons"
+        /></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><img
+            src="images/linkedin-icon.svg"
+            alt="Linkedin Icon"
+            class="footer-icons"
+        /></a>
+      </div>
+      <div>
+        <p>WDD 231 Class Project</p>
+        <p>Matheus Grigio</p>
+        <p>&copy; 2024 Chamber of Commerce</p>
+        <span id="last-modification"></span>
+      </div>
+    </footer>
+  </body>
+</html>

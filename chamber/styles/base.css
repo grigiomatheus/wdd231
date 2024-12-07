@@ -33,6 +33,16 @@ body.dark-theme {
     color: var(--font-light-color);
 }
 
+main {
+    background-color: var(--background-light-color);
+    color: var(--font-dark-color);
+}
+
+main.dark-theme {
+    background-color: var(--background-dark-color);
+    color: var(--font-light-color);
+}
+
 header {
     display: grid;
     grid-template-columns: auto auto 1fr auto auto;
