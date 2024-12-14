@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 231 - Chamber Join Page</title>
+    <meta name="author" content="Matheus Grigio da Silva" />
+    <meta
+      name="description"
+      content="This page represents the join page of the local chamber of commerce."
+    />
+    <meta property="og:title" content="WDD 231 Chamber Directory Page" />
+    <meta
+      property="og:description"
+      content="This page represents the join page of the local chamber of commerce."
+    />
+    <meta
+      property="og:image"
+      content="https://grigiomatheus.github.io/wdd231/chamber/images/og-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://grigiomatheus.github.io/wdd231/join.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="icon" href="images/favico.svg" type="image/x-icon" />
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.png" loading="lazy" alt="Logo" class="logo" />
+      <h1>Londrina Chamber</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle">
+        <img src="images/theme-toggle-icon.png" alt="Theme Toggle Icon" />
+      </button>
+      <button id="hamburguer"></button>
+    </header>
+
+    <main>
+      <div>
+        <h2>Membership Application Form</h2>
+        <form method="GET" action="thankyou.html" class="join-form">
+          <label
+            >First Name
+            <input
+              type="text"
+              name="first-name"
+              required
+              autocomplete="given-name"
+              title="Your First Name"
+          /></label>
+          <label
+            >Last Name
+            <input
+              type="text"
+              name="last-name"
+              required
+              autocomplete="family-name"
+              title="Your Last Name"
+          /></label>
+          <label
+            >Title
+            <input
+              type="text"
+              name="title"
+              required
+              autocomplete="organization-title"
+              title="Your Organization Title"
+              minlength="7"
+          /></label>
+          <label
+            >Email
+            <input
+              type="email"
+              name="email"
+              required
+              autocomplete="email"
+              title="Your Email Address"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          /></label>
+          <label
+            >Cell Phone
+            <input type="tel" name="cell-phone" required autocomplete="tel"
+          /></label>
+          <label
+            >Organization Name
+            <input
+              type="text"
+              name="organization-name"
+              required
+              autocomplete="organization"
+              title="Your Organization Name"
+          /></label>
+          <label
+            >Membership Level
+            <input
+              list="membership-levels"
+              name="membership-level"
+              required
+              autocomplete="on"
+              title="Membership Level"
+            />
+
+            <datalist id="membership-levels">
+              <option value="Bronze Membership" />
+              <option value="Silver Membership" />
+              <option value="Gold Membership" />
+              <option value="NP Membership" />
+            </datalist>
+          </label>
+          <label>
+            Description
+            <textarea
+              name="description"
+              rows="5"
+              title="Description of your organization"
+            >
+            </textarea>
+          </label>
+          <input type="hidden" name="timestamp" />
+          <input type="submit" name="join-form" value="Join" />
+        </form>
+      </div>
+
+      <div>
+        <h2>Membership Levels</h2>
+        <div class="membership-container">
+          <div class="membership-card">
+            <h3>Non Profit Membership Level</h3>
+            <button id="non-profit-membership-button">Learn More</button>
+            <dialog id="non-profit-membership-dialog">
+                <h3>Non Profit Membership Level</h3>
+                <p>
+                    The Non Profit Membership Level is for organizations that are
+                    not-for-profit and are looking to join the Londrina Chamber of
+                    Commerce.
+                </p>
+                <br>
+                <p>
+                    This membership level is free of charge and provides access to
+                    the Londrina Chamber of Commerce directory and events.
+                </p>
+                <button class="modal-return-button">Return</button>
+            </dialog>
+          </div>
+          <div class="membership-card">
+            <h3>Bronze Membership Level</h3>
+            <button id="bronze-membership-button">Learn More</button>
+            <dialog id="bronze-membership-dialog">
+                <h3>Bronze Membership Level</h3>
+                <p>
+                    The Bronze Membership Level is for organizations that are
+                    looking to join the Londrina Chamber of Commerce.
+                </p>
+                <br>
+                <p>
+                    This membership level provides access to the Londrina Chamber of
+                    Commerce directory and events.
+                </p>
+                <button class="modal-return-button">Return</button>
+            </dialog>
+          </div>
+          <div class="membership-card">
+            <h3>Silver Membership Level</h3>
+            <button id="silver-membership-button">Learn More</button>
+            <dialog id="silver-membership-dialog">
+                <h3>Silver Membership Level</h3>
+                <p>
+                    The Silver Membership Level is for organizations that are
+                    looking to join the Londrina Chamber of Commerce.
+                </p>
+                <br>
+                <p>
+                    This membership level provides access to the Londrina Chamber of
+                    Commerce directory and events.
+                </p>
+                <button class="modal-return-button">Return</button>
+          </div>
+          <div class="membership-card">
+            <h3>Gold Membership Level</h3>
+            <button id="gold-membership-button">Learn More</button>
+            <dialog id="gold-membership-dialog">
+                <h3>Gold Membership Level</h3>
+                <p>
+                    The Gold Membership Level is for organizations that are
+                    looking to join the Londrina Chamber of Commerce.
+                </p>
+                <br>
+                <p>
+                    This membership level provides access to the Londrina Chamber of
+                    Commerce directory and events.
+                </p>
+                <button class="modal-return-button">Return</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Londrina Chamber Commerce</strong>
+        <p>Address: 1234 Main Street</p>
+        <p>Londrina, Paraná, Brazil</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: LondrinaChamber@email.com</p>
+      </div>
+      <div class="media-icons">
+        <a href="https://youtube.com" target="_blank"
+          ><img
+            src="images/youtube-icon.svg"
+            alt="Youtube Icon"
+            class="footer-icons"
+        /></a>
+        <a href="https://twitter.com" target="_blank"
+          ><img
+            src="images/twitter-icon.svg"
+            alt="Twitter Icon"
+            class="footer-icons"
+        /></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><img
+            src="images/linkedin-icon.svg"
+            alt="Linkedin Icon"
+            class="footer-icons"
+        /></a>
+      </div>
+      <div>
+        <p>WDD 231 Class Project</p>
+        <p>Matheus Grigio</p>
+        <p>&copy; 2024 Chamber of Commerce</p>
+        <span id="last-modification"></span>
+      </div>
+    </footer>
+  </body>
+</html>

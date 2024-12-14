@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You - Chamber Join Page</title>
+    <meta name="author" content="Matheus Grigio da Silva" />
+    <meta
+      name="description"
+      content="Thank you page for joining the local chamber of commerce."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/thankyou.css" />
+    <link rel="icon" href="images/favico.svg" type="image/x-icon" />
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" loading="lazy" alt="Logo" class="logo" />
+      <h1>Londrina Chamber</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle">
+        <img src="images/theme-toggle-icon.png" alt="Theme Toggle Icon" />
+      </button>
+      <button id="hamburguer"></button>
+    </header>
+
+    <main>
+      <div>
+        <h1>Thank You for Joining!</h1>
+        <p>We have received your membership application. Our team will review your information and get back to you shortly.</p>
+        <div id="form-data"></div>
+        <a href="./join.html" class="button">Return</a>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Londrina Chamber Commerce</strong>
+        <p>Address: 1234 Main Street</p>
+        <p>Londrina, Paraná, Brazil</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: LondrinaChamber@email.com</p>
+      </div>
+      <div class="media-icons">
+        <a href="https://youtube.com" target="_blank"
+          ><img
+            src="images/youtube-icon.svg"
+            alt="Youtube Icon"
+            class="footer-icons"
+        /></a>
+        <a href="https://twitter.com" target="_blank"
+          ><img
+            src="images/twitter-icon.svg"
+            alt="Twitter Icon"
+            class="footer-icons"
+        /></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><img
+            src="images/linkedin-icon.svg"
+            alt="Linkedin Icon"
+            class="footer-icons"
+        /></a>
+      </div>
+      <div>
+        <p>WDD 231 Class Project</p>
+        <p>Matheus Grigio</p>
+        <p>&copy; 2024 Chamber of Commerce</p>
+        <span id="last-modification"></span>
+      </div>
+    </footer>
+  </body>
+</html>
