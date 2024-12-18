@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "title": "Paracetamol",
+        "description": "Analgesic and antipyretic for pain and fever relief.",
+        "image": "images/drug.png",
+        "price": 5.99
+    },
+    {
+        "id": 2,
+        "title": "Ibuprofen",
+        "description": "Anti-inflammatory and analgesic for pain and inflammation relief.",
+        "image": "images/drug.png",
+        "price": 8.49
+    },
+    {
+        "id": 3,
+        "title": "Vitamin C",
+        "description": "Vitamin supplement to strengthen the immune system.",
+        "image": "images/drug.png",
+        "price": 12.99
+    },
+    {
+        "id": 4,
+        "title": "Cough Syrup",
+        "description": "Syrup for cough relief and soothing the throat.",
+        "image": "images/drug.png",
+        "price": 7.99
+    },
+    {
+        "id": 5,
+        "title": "Aspirin",
+        "description": "Pain reliever and anti-inflammatory medication.",
+        "image": "images/drug.png",
+        "price": 6.99
+    },
+    {
+        "id": 6,
+        "title": "Antacid Tablets",
+        "description": "Tablets for relief from heartburn and indigestion.",
+        "image": "images/drug.png",
+        "price": 4.99
+    },
+    {
+        "id": 7,
+        "title": "Allergy Relief",
+        "description": "Antihistamine for allergy symptom relief.",
+        "image": "images/drug.png",
+        "price": 9.99
+    },
+    {
+        "id": 8,
+        "title": "Band-Aids",
+        "description": "Adhesive bandages for minor cuts and scrapes.",
+        "image": "images/drug.png",
+        "price": 3.49
+    },
+    {
+        "id": 9,
+        "title": "Hand Sanitizer",
+        "description": "Alcohol-based hand sanitizer for killing germs.",
+        "image": "images/drug.png",
+        "price": 2.99
+    },
+    {
+        "id": 10,
+        "title": "Thermometer",
+        "description": "Digital thermometer for measuring body temperature.",
+        "image": "images/drug.png",
+        "price": 14.99
+    },
+    {
+        "id": 11,
+        "title": "Cough Drops",
+        "description": "Lozenges for soothing sore throats and coughs.",
+        "image": "images/drug.png",
+        "price": 3.99
+    },
+    {
+        "id": 12,
+        "title": "Multivitamins",
+        "description": "Daily multivitamin supplement for overall health.",
+        "image": "images/drug.png",
+        "price": 15.99
+    },
+    {
+        "id": 13,
+        "title": "Antiseptic Cream",
+        "description": "Cream for preventing infection in minor cuts and burns.",
+        "image": "images/drug.png",
+        "price": 5.49
+    },
+    {
+        "id": 14,
+        "title": "Eye Drops",
+        "description": "Drops for relieving dry and irritated eyes.",
+        "image": "images/drug.png",
+        "price": 6.49
+    },
+    {
+        "id": 15,
+        "title": "Nasal Spray",
+        "description": "Spray for relieving nasal congestion.",
+        "image": "images/drug.png",
+        "price": 8.99
+    }
+]

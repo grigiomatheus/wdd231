@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 231 - Grigio's Pharmacy - Cart</title>
+    <meta name="author" content="Matheus Grigio da Silva" />
+    <meta
+      name="description"
+      content="View and manage the items in your cart at Grigio's Pharmacy. Ensure you have everything you need for your health and wellness before proceeding to checkout."
+    />
+    <meta property="og:title" content="WDD 231 Chamber Directory Page" />
+    <meta
+      property="og:description"
+      content="View and manage the items in your cart at Grigio's Pharmacy. Ensure you have everything you need for your health and wellness before proceeding to checkout."
+    />
+    <meta
+      property="og:image"
+      content="https://grigiomatheus.github.io/wdd231/chamber/images/og-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://grigiomatheus.github.io/wdd231/site/cart.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/cart.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/cart.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+      <h1>Grigio's Pharmacy</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <button id="hamburguer"></button>
+    </header>
+    <main>
+      <h1>Cart</h1>
+      <div class="cart">
+        <div id="cart-products"></div>
+        <div id="cart-summary"></div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <strong>Grigio's Pharmacy</strong>
+        <p>Address: 1234 Main Street</p>
+        <p>Londrina, Paraná, Brazil</p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+      <div class="media-icons">
+        <a href="https://instragram.com" target="_blank"
+          ><div id="instagram-icon"></div
+        ></a>
+        <a href="https://facebook.com" target="_blank"
+          ><div id="facebook-icon"></div
+        ></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><div id="linkedin-icon"></div
+        ></a>
+      </div>
+      <div>
+        <p>WDD 231 - Individual Project</p>
+        <p>Matheus Grigio</p>
+        <p>&copy; 2024 - Grigio's Pharmacy</p>
+        <span id="last-modification"></span>
+      </div>
+    </footer>
+  </body>
+</html>

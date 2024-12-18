@@ -1,0 +1,140 @@
+h1 {
+  font-size: 3rem;
+  justify-self: center;
+  padding: 20px 0;
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 0px 20px;
+  transition: 0.5s;
+}
+
+#empty-cart-message {
+  font-size: 2rem;
+  width: calc(100vw - 40px);
+  text-align: center;
+}
+
+#cart-products {
+  display: grid;
+  background-color: var(--primary-color);
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.product-card {
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  background-color: var(--quinary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--tertiary-color);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.image-container img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card p {
+  font-family: var(--secondary-font);
+  color: var(--quaternary-color);
+  margin-bottom: 10px;
+}
+
+.remove-button {
+  display: block;
+  padding: 10px 20px;
+  border: 2px solid var(--secondary-color);
+  font-family: var(--primary-font);
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  justify-self: center;
+}
+
+.remove-button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+#cart-summary {
+  background-color: var(--quinary-color);
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color);
+  height: 200px;
+  position: sticky;
+  top: 5%;
+}
+
+#cart-summary h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#cart-summary p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#cart-summary button {
+  display: block;
+  padding: 10px 20px;
+  border: 2px solid var(--secondary-color);
+  font-family: var(--primary-font);
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  justify-self: center;
+}
+
+#cart-summary button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .cart {
+    grid-template-columns: 1fr;
+  }
+
+  #cart-summary {
+    margin-top: 20px;
+  }
+}

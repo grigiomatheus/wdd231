@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 231 - Grigio's Pharmacy</title>
+    <meta name="author" content="Matheus Grigio da Silva" />
+    <meta
+      name="description"
+      content="Grigio's Pharmacy is your trusted local pharmacy offering a wide range of health and wellness products, prescription services, and expert advice to help you live a healthier life."
+    />
+    <meta property="og:title" content="WDD 231 Chamber Directory Page" />
+    <meta
+      property="og:description"
+      content="Grigio's Pharmacy is your trusted local pharmacy offering a wide range of health and wellness products, prescription services, and expert advice to help you live a healthier life."
+    />
+    <meta
+      property="og:image"
+      content="https://grigiomatheus.github.io/wdd231/chamber/images/og-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://grigiomatheus.github.io/wdd231/site/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="scripts/base.js" defer></script>
+    <script src="scripts/index.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+      <h1>Grigio's Pharmacy</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <button id="hamburguer"></button>
+    </header>
+    <main>
+      <section id="search-section">
+        <h1>Looking for something?</h1>
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for products..."
+          autocomplete="on"
+        />
+        <button id="search-button">Search</button>
+      </section>
+      <section id="products-section"></section>
+      <dialog>
+        <h2>Product successfully added to cart!</h2>
+        <div class="success-animation">
+          <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+            <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+          </svg>
+        </div>
+        <button id="close-dialog">Close</button>
+      </dialog>
+    </main>
+    <footer>
+      <div>
+        <strong>Grigio's Pharmacy</strong>
+        <p>Address: 1234 Main Street</p>
+        <p>Londrina, Paraná, Brazil</p>
+        <p>Phone: 123-456-7890</p>
+      </div>
+      <div class="media-icons">
+        <a href="https://instragram.com" target="_blank"
+          ><div id="instagram-icon"></div
+        ></a>
+        <a href="https://facebook.com" target="_blank"
+          ><div id="facebook-icon"></div
+        ></a>
+        <a href="https://linkedin.com" target="_blank"
+          ><div id="linkedin-icon"></div
+        ></a>
+      </div>
+      <div>
+        <p>WDD 231 - Individual Project</p>
+        <p>Matheus Grigio</p>
+        <p>&copy; 2024 - Grigio's Pharmacy</p>
+        <span id="last-modification"></span>
+      </div>
+    </footer>
+  </body>
+</html>

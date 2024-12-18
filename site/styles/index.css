@@ -1,0 +1,252 @@
+#search-section {
+  display: block;
+  padding: 20px 10vw;
+  text-align: center;
+  height: auto;
+  background-color: var(--primary-color);
+  justify-items: center;
+}
+
+#search-button {
+  display: block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: 2px solid var(--secondary-color);
+  font-family: var(--primary-font);
+  opacity: 0.8;
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+#search-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+input[type="text"] {
+  display: block;
+  padding: 10px 20px;
+  width: 40%;
+  min-width: 250px;
+  margin-top: 15px;
+  border: 2px solid var(--secondary-color);
+  font-family: var(--primary-font);
+  border-radius: 20px;
+  color: var(--secondary-color);
+}
+
+section h1 {
+  font-size: 2rem;
+}
+
+#products-section {
+  display: grid;
+  background-color: var(--primary-color);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.product-card {
+  border: 1px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  background-color: var(--quinary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--tertiary-color);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.image-container img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card p {
+  font-family: var(--secondary-font);
+  color: var(--quaternary-color);
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  display: block;
+  padding: 10px 20px;
+  border: 2px solid var(--secondary-color);
+  font-family: var(--primary-font);
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  justify-self: center;
+}
+
+.buy-button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 5px;
+}
+
+#no-results {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  color: var(--tertiary-color);
+  width: calc(100vw - 40px);
+  margin: 20px;
+}
+
+@media (max-width: 1000px) {
+  #products-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  input[type="text"] {
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  #products-section {
+    grid-template-columns: 1fr;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+}
+
+/* Dialog */
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 50px;
+  background-color: var(--quinary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog h2 {
+  font-family: var(--primary-font);
+  color: var(--tertiary-color);
+}
+
+#close-dialog {
+  display: block;
+  padding: 10px 20px;
+  justify-self: center;
+  border: 2px solid var(--secondary-color);
+  font-family: var(--primary-font);
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#close-dialog:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+/* Sucess svg animation */
+.success-animation {
+  margin: 50px auto;
+}
+
+.checkmark {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #4bb71b;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #4bb71b;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+  scale 0.3s ease-in-out 0.9s both;
+  position: relative;
+  top: 5px;
+  right: 5px;
+  margin: 0 auto;
+}
+
+.checkmark-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #4bb71b;
+  fill: #fff;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark-check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #4bb71b;
+  }
+}
